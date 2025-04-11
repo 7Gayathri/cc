@@ -1,0 +1,3849 @@
+/** Hash Configs **/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Warp&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+
+
+	--fontSize1: calc(2rem - 0.5rem);
+	--fontSize2: calc(2.5rem - 0.5rem);
+
+	/** Colors **/
+	--font-color1: #151515;
+	--font-color2: #ffffff;
+
+	/* color */
+	--color1: #10105a;
+	--color2: #926bab;
+	--color3: #e3b7f3;
+	--color4: #d19af5;
+
+	--bg-1: #9253e8;
+	--bg-2: #673ee4;
+	--bg-3: #fed000;
+	--bg-4: #e39e05;
+
+	--xs: 1%;
+	--sm: 2.5%;
+	--md: 5%;
+	--lg: 7.5%;
+	--xl: 10%;
+
+	--px-xs: 1%;
+	--px-sm: 2.5%;
+	--px-md: 5%;
+	--px-lg: 7.5%;
+	--px-xl: 10%;
+
+}
+
+/** Hash Configs Ends **/
+
+/*** 
+====================================================================
+	Text - START
+====================================================================
+***/
+body {
+	margin: auto;
+}
+
+p {
+	line-height: 1.8;
+}
+
+
+/* lg screen*/
+@media (max-width: 1012px) {}
+
+/* md screen*/
+@media (max-width: 768px) {
+
+	h1,
+	.h1 {
+		font-size: 6.4rem;
+	}
+
+	h2,
+	.h2 {
+		font-size: 3.4rem;
+	}
+}
+
+/* sm screen*/
+@media (max-width: 577px) {
+
+	/** DESIGN **/
+	h1,
+	.h1 {
+		font-size: 4.7rem;
+	}
+
+	h2,
+	.h2 {
+		font-size: 2.9rem;
+	}
+
+	h3,
+	.h3 {
+		font-size: 1.8rem;
+	}
+
+	h4,
+	.h4 {
+		font-size: 1.6rem;
+	}
+
+	h5,
+	.h5 {
+		font-size: 1.6rem;
+	}
+}
+
+/*** 
+====================================================================
+	Text - Ends
+====================================================================
+***/
+
+
+/*** 
+====================================================================
+    Common Styling - Start
+====================================================================
+***/
+
+/* ====================================== Slide Page Start ========================================== */
+
+/* Slide image */
+.bg {
+	--imgBg: url("../img/Slide-background.png");
+	--imgBgHeight: 100%;
+	/* --imgBgHeight: 100vh; */
+	width: 100%;
+	background: var(--imgBg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: var(--imgBgHeight);
+	background-position: center;
+}
+
+body {
+	background: url('../img/bg_img.png') no-repeat center/cover fixed;
+	font-family: "Lato", serif;
+	padding: 20px;
+	overflow: hidden;
+}
+
+body img {
+	width: 100%;
+}
+
+
+h3 {
+	margin: 0 !important;
+}
+
+.pageGrid {
+	align-items: center;
+	--xl: 12%;
+	/*padding-left*/
+}
+
+header {
+	position: absolute;
+	top: 50px;
+}
+
+/* --------- Slide header section Start --------- */
+
+.slide .slide-header h3 {
+	font-size: var(--fontSize1);
+	color: var(--color2);
+}
+
+.slide-header .level-indicator {
+	width: 200px;
+	background-color: var(--color3);
+	border: 2px solid var(--color2);
+	border-radius: 20px;
+	padding: 6px;
+	position: absolute;
+	left: 20px;
+}
+
+.slide-header .prev-arrow {
+	padding: 8px;
+	border-radius: 100%;
+	font-size: 3rem;
+	height: 50px;
+	width: 50px;
+	background-color: var(--color3);
+	border: 2px solid var(--color2);
+	color: var(--color2);
+	align-content: center;
+}
+
+.slide-header .page-indicator {
+	width: 110px;
+	border: 2px solid var(--color2);
+	border-radius: 50px;
+	padding: 10px;
+	background-color: var(--color3);
+}
+
+/* --------- Slide header section end --------- */
+
+.prev-btn,
+.next-btn {
+	font-size: 5rem;
+	color: var(--color4);
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+	color: #6A3B88;
+	cursor: pointer;
+}
+
+.prev-btn-static {
+	position: absolute;
+	top: 42%;
+	left: 0;
+	z-index: 1;
+}
+
+.next-btn-static {
+	position: absolute;
+	top: 42%;
+	right: 0%;
+	z-index: 1;
+}
+
+main .simpleGrid {
+	height: 80vh;
+	align-content: center;
+}
+
+/* Submit button */
+.submit-btn {
+	border: none;
+	border-radius: 10px;
+	padding: 12px;
+	width: 100px;
+	color: var(--font-color2);
+	background-color: var(--color2);
+	font-size: 1.8rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.box p {
+	font-size: 2.5rem;
+}
+
+.box {
+	width: 250px;
+	border: 1px solid var(--color2);
+	border-radius: 10px;
+	background-color: var(--color3);
+	cursor: pointer;
+}
+
+.ans-select.selected {
+	background-color: #926bab !important;
+}
+
+.ans-select.selected p {
+	color: white;
+}
+
+.mobile {
+	display: none;
+}
+
+/* ============================== popup ============================== */
+.popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	opacity: 0.5
+}
+
+.result-image {
+	width: 100px;
+}
+
+.custom-overlay .ui-dialog-content {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*** 
+====================================================================
+    Common Styling - END
+====================================================================
+***/
+
+
+/*** 
+====================================================================
+    Page Styling - Start
+====================================================================
+***/
+
+body {
+	user-select: none;
+}
+
+p {
+	font-size: 3.5rem;
+	font-weight: 700;
+	user-select: none;
+	color: #5b287a;
+}
+
+.menu-icon i {
+	background-color: #5f7c9c;
+	color: white;
+	border-radius: 50%;
+	padding: 12px;
+	font-size: 2rem;
+}
+
+.arrow {
+	color: rgb(207, 43, 43);
+	font-size: 4rem;
+	transform: rotate(-30deg);
+}
+
+.inner-flex {
+	width: auto !important;
+}
+
+/* common codes start */
+/* Style Block Coding Start */
+
+.style-block {
+	position: relative;
+	color: white;
+}
+
+.style-bl {
+	width: 260px;
+	height: 50px;
+	background-color: var(--bg-3);
+	box-shadow: 0px 5px 0px var(--bg-4);
+	border-radius: 10px;
+	align-content: center;
+	text-align: start;
+	padding: 15px 10px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.close.style-bl {
+	margin-top: 150px;
+}
+
+.bg-col {
+	background-color: var(--bg-4);
+	padding: 7px;
+	border-radius: 5px;
+	align-content: center;
+	font-size: 2rem;
+}
+
+.close span {
+	margin-left: 45px;
+	height: 40px;
+	background-color: var(--bg-4);
+	padding: 7px;
+	border-radius: 5px;
+	font-size: 2rem;
+}
+
+.style-bl::before {
+	content: " ";
+	width: 50px;
+	height: 100%;
+	background-color: var(--bg-3);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.input {
+	background-color: white;
+	font-size: 2rem;
+	width: 75px;
+	height: 40px;
+	padding: 5px;
+	color: black;
+	border-radius: 5px;
+	align-content: center;
+	user-select: none;
+	margin-left: 45px;
+}
+
+
+/* Style Block Coding End */
+/* style Block short Coding start */
+.style-block-short {
+	position: relative;
+	color: white;
+	font-size: 1.8rem;
+	user-select: none;
+}
+
+.style-bl {
+	width: 260px;
+	height: 50px;
+	background-color: var(--bg-3);
+	box-shadow: 0px 5px 0px var(--bg-4);
+	border-radius: 10px;
+	align-content: center;
+	text-align: start;
+	padding: 15px 10px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.style-block-short .toggle-btn {
+	width: 30px;
+	margin-left: 5px;
+	position: relative;
+	z-index: 1;
+}
+
+.close.style-bl {
+	margin-top: 150px;
+}
+
+.close span {
+	margin-left: 45px;
+	height: 40px;
+	background-color: var(--bg-4);
+	padding: 7px;
+	border-radius: 5px;
+	font-size: 2rem;
+}
+
+.input-box {
+	width: 100px;
+	height: 40px;
+	background: white;
+	border-radius: 5px;
+	padding: 5px 8px;
+	outline: none;
+	font-size: 1.4rem;
+	border: 2px solid #e39e05;
+}
+
+.style-block-short .bg1 {
+	height: 40px;
+	display: inline-block;
+	background-color: #e39e05;
+	padding: 5px 5px;
+	border-radius: 5px;
+}
+
+.style-block-short .hide-style {
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+.style-block-short button {
+	background: #e39e05;
+	color: white;
+	padding: 2px 2px;
+	border-radius: 5px;
+	border-color: transparent;
+	font-size: 1.4rem;
+	border: none;
+	height: 38px;
+}
+
+/* Style Block short Coding End */
+.container {
+	font-size: 1.8rem;
+	display: inline-flex;
+	align-items: center;
+	padding: 25px;
+	border-radius: 10px;
+	color: white;
+	position: absolute;
+	height: 40px;
+	gap: 15px;
+}
+
+.container .dropdown {
+	position: relative;
+	width: 80px;
+}
+
+.container .dropdown-btn {
+	font-size: 1.6rem;
+	color: white;
+	border-radius: 8px;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	user-select: none;
+}
+
+.container .dropdown-btn::after {
+	content: "\25BC";
+}
+
+.container .size1 {
+	width: 70%;
+}
+
+.container .size2 {
+	width: 100%;
+}
+
+.input1 {
+	width: 60px;
+	height: 30px;
+	background-color: white;
+	border-radius: 5px;
+	margin-left: 10px;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+}
+
+
+/* menu +icon blocks starts */
+#menu {
+	display: block !important;
+}
+
+#menu {
+	background: #6d87a1;
+	color: white;
+	padding: 10px;
+	position: relative;
+	border-radius: 10px;
+	height: fit-content;
+}
+
+#menu .dropdown-menu {
+	display: none;
+	background: #6d87a1;
+	padding: 10px;
+	border-radius: 5px;
+	width: 200px;
+	position: absolute;
+	left: 70px;
+	color: white;
+}
+
+#menu .dropdown-menu.show {
+	display: block;
+}
+
+#menu .menu-header {
+	border-bottom: 2px dashed #90a4be;
+	margin-bottom: 5px;
+	font-size: 1.8rem;
+}
+
+#menu .menu-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8px;
+}
+
+#menu .menu-grid .menu-item {
+	text-align: center;
+	padding: 8px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 4px;
+	font-size: 20px;
+	width: 80px;
+}
+
+#menu .menu-grid .menu-item span {
+	display: block;
+	font-size: 12px;
+	margin-top: 4px;
+	user-select: none;
+}
+
+#menu .position-menu {
+	background-color: #6d87a1;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8px;
+	padding: 10px;
+	border-radius: 10px;
+	position: relative;
+	right: -150px;
+	bottom: 330px;
+}
+
+#menu .submenu-item {
+	background: rgba(255, 255, 255, 0.2);
+	padding: 8px;
+	border-radius: 4px;
+	width: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#menu .submenu-item span {
+	margin-top: 5px;
+	font-size: 12px;
+	user-select: none;
+}
+
+#menu img {
+	width: 20px;
+	height: 20px;
+}
+
+/* menu +icon blocks ends */
+
+.b1 {
+	position: relative;
+}
+
+/* htmlblock starts */
+.html-bl,
+.body-bl,
+.div-bl,
+.div-bl-id,
+.div-bl-cl {
+	align-content: center;
+	text-align: start;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.html-block {
+	position: relative;
+	font-size: 1.4rem;
+	color: white;
+}
+
+.html-block span {
+	color: white;
+}
+
+.html-bl {
+	width: 250px;
+	height: 50px;
+	background-color: #9253e8;
+	box-shadow: 0px 5px 0px #673ee4;
+	border-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+}
+
+.open.html-bl::before {
+	content: " ";
+	width: 40px;
+	height: 100%;
+	background-color: #9253e8;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.body-block {
+	margin: 10px 50px;
+	position: relative;
+}
+
+.body-bl {
+	width: 240px;
+	height: 40px;
+	background-color: #673ee4;
+	border-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 0px 5px 0px #9253e8;
+	place-content: center;
+}
+
+.open.body-bl::before {
+	content: " ";
+	width: 40px;
+	height: 100%;
+	background-color: #673ee4;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.close.body-bl {
+	margin-top: 100px;
+}
+
+.close.body-bl span,
+.close.html-bl span {
+	background-color: transparent !important;
+}
+
+/* htmlblock ends */
+
+/* keyframe-block start */
+
+.keyframe .keyframe-block {
+	position: relative;
+}
+
+.keyframe .keyframe-block .keyframe-bl {
+	width: 410px;
+	font-family: Arial, sans-serif;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background: #a5c8db;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0px 5px 0px #7ea1b3;
+	height: 50px;
+	color: white;
+	font-size: 1.4rem;
+}
+
+.keyframe .toggle-btn {
+	background: #7ea1b3;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-size: 1.4rem;
+	z-index: 1;
+	width: 35px;
+	height: 35px;
+}
+
+.keyframe .input-box {
+	width: 80px;
+	height: 35px;
+	text-align: center;
+	font-size: 1rem;
+	border-radius: 5px;
+	border: 2px solid #7ea1b3;
+	background: white;
+}
+
+.keyframe .bg {
+	display: flex;
+	align-items: center;
+	padding: 5px 8px;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	height: 40px;
+}
+
+.keyframe .add-btn {
+	background: white;
+	color: #7ea1b3;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+	font-size: 1.4rem;
+}
+
+.keyframe .close-btn {
+	background: #7ea1b3;
+	color: white;
+	padding: 6px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+	font-size: 1rem;
+	width: 35px;
+	height: 35px;
+	padding: 0 2px;
+	position: absolute;
+	top: 20px;
+	left: 360px;
+}
+
+
+.keyframe .close-block {
+	text-align: left;
+	background: #a5c8db;
+	color: white;
+	width: 200px;
+	height: 50px;
+	margin-top: 128px;
+	margin-left: 45px;
+	background-color: #a5c8db;
+	border-radius: 5px;
+	padding: 10px 10px;
+}
+
+.keyframe .expanded .keyframe-content {
+	display: block;
+	height: auto;
+}
+
+.keyframe .expanded .keyframe-block {
+	height: auto;
+}
+
+.keyframe .expanded .close-block {
+	display: flex;
+	align-items: center;
+
+}
+
+.keyframe .keyframe-block .keyframe-bl::before {
+	content: " ";
+	width: 50px;
+	height: 100%;
+	background-color: #a5c8db;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+
+.keyframe .percent-input {
+	width: 60px;
+	height: 35px;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	border-radius: 8px;
+	border: none;
+	background: white;
+	padding: 5px;
+}
+
+.keyframe .keyframe-step {
+	display: none;
+	align-items: center;
+	gap: 10px;
+	background: #a5c8db;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 3px 0px #7ea1b3;
+	margin-top: 8px;
+	position: relative;
+	left: 55px;
+	width: 200px;
+}
+
+/* keyframe-block end */
+/* width */
+.width.container {
+	background-color: #0588e9;
+	box-shadow: 0px 5px 0px #0259a2;
+}
+
+.width .dropdown-btn {
+	width: 80px;
+	background-color: #0259a2;
+}
+
+/* height */
+.height.container {
+	background-color: #0588e9;
+	box-shadow: 0px 5px 0px #0259a2;
+}
+
+.height .dropdown-btn {
+	width: 80px;
+	background-color: #0259a2;
+}
+
+/* background-color */
+.bg-color.container {
+	background-color: #0588e9;
+	box-shadow: 0px 5px 0px #0259a2;
+}
+
+.bg-color .dropdown-btn {
+	width: 210%;
+	background-color: #0259a2;
+}
+
+.bg-color input {
+	width: 100px;
+}
+
+.bg-color .span {
+	margin-left: 90px;
+}
+
+/* color */
+.color.container {
+	background-color: #0588e9;
+	box-shadow: 0px 5px 0px #0259a2;
+}
+
+.color .dropdown-btn {
+	width: 210%;
+	background-color: #0259a2;
+}
+
+.color input {
+	width: 100px;
+}
+
+.color .span {
+	margin-left: 90px;
+}
+
+/* margin */
+.margin.container {
+	background-color: #b355f3;
+	box-shadow: 0px 5px 0px #6c3490;
+}
+
+.margin input {
+	width: 80px;
+}
+
+/* clip-path */
+.clip-path.container {
+	background-color: #0588e9;
+	box-shadow: 0px 5px 0px #0259a2;
+}
+
+.clip-path input {
+	width: 300px;
+}
+
+.clip-path .span {
+	width: 75px;
+}
+
+/* line-height*/
+
+.line-height.container {
+	background-color: #ff5d5d;
+	box-shadow: 0px 5px 0px #d93f3f;
+}
+
+.line-height .dropdown-btn {
+	background-color: #d93f3f;
+}
+
+
+.line-height span {
+	margin-left: 30px;
+}
+
+.line-height .dropdown-btn::after {
+	content: "";
+}
+
+.line-height .dropdown-btn.icon::after {
+	content: "\25BC";
+}
+
+/* position */
+
+.position.container {
+	background-color: #c7c305;
+	box-shadow: 0px 5px 0px #908f2b;
+}
+
+.position .dropdown-btn {
+	background-color: #908f2b;
+}
+
+.position .size1 {
+	width: 85px;
+}
+
+.position span {
+	margin-left: 7px;
+}
+
+.position .dropdown-btn::after {
+	content: "";
+}
+
+.position .dropdown-btn.icon::after {
+	content: "\25BC";
+}
+
+
+/* position-properties top left right bottom*/
+
+.positions-properties.container {
+	background-color: #ff943b;
+	box-shadow: 0px 5px 0px #cf7023;
+}
+
+.positions-properties .dropdown-btn {
+	width: 80px;
+	background-color: #cf7023;
+}
+
+.positions-properties input {
+	width: 60px;
+}
+
+
+/*margin-properties top left right bottom*/
+
+.margin-properties.container {
+	background-color: #b355f3;
+	box-shadow: 0px 5px 0px #6c3490;
+}
+
+.margin-properties .dropdown-btn {
+	width: 80px;
+	background-color: #6c3490;
+}
+
+
+.margin-properties span {
+	margin-left: 3px;
+}
+
+/*padding-properties top left right bottom */
+
+.padding-properties.container {
+	background-color: #0097A7;
+	box-shadow: 0px 5px 0px #007D8A;
+}
+
+.padding-properties .dropdown-btn {
+	background-color: #007D8A;
+}
+
+
+.padding-properties span {
+	margin-left: 3px;
+}
+
+/* border-properties top left right bottom */
+
+.border-properties.container {
+	background-color: #f66a94;
+	box-shadow: 0px 5px 0px #ad2d53;
+}
+
+.border-properties .dropdown-btn {
+	background-color: #ad2d53;
+}
+
+.border-properties span {
+	margin-left: 3px;
+}
+
+/* border-properties top-left,top-right bottom-left, bottom-right */
+.border-radius-properties.container {
+	background-color: #f66a94;
+	box-shadow: 0px 5px 0px #ad2d53;
+}
+
+.border-radius-properties .size {
+	width: 115px;
+}
+
+.border-radius-properties .dropdown-btn {
+	background-color: #ad2d53;
+}
+
+.border-radius-properties .size2 {
+	width: 100%;
+}
+
+
+.border-radius-properties .radius {
+	margin-left: 50px;
+}
+
+/* opacity */
+
+.opacity.container {
+	background-color: #64c05b;
+	box-shadow: 0px 5px 0px #4e8d48;
+}
+
+.opacity .dropdown-btn {
+	background-color: #4e8d48;
+	width: 100%;
+}
+
+
+.opacity input {
+	width: 100px;
+}
+
+.opacity .span {
+	margin-left: 30px;
+}
+
+/* trnsform */
+
+.transform.container {
+	background-color: #9fb4ff;
+	box-shadow: 0px 5px 0px #707eaf;
+}
+
+.transform .dropdown-btn {
+	width: 80px;
+	background-color: #707eaf;
+}
+
+.transform .size {
+	width: 100px;
+	margin-left: 5px;
+}
+
+.transform .span {
+	margin-left: 30px;
+}
+
+.transform span {
+	margin-left: 5px;
+}
+
+/* animation */
+
+
+.animation.container {
+	background-color: #1d708d;
+	box-shadow: 0px 5px 0px #0d5670;
+}
+
+.animation .dropdown-btn {
+	background-color: #0d5670;
+}
+
+
+.animation .size1 {
+	width: 150px;
+}
+
+.animation .size {
+	width: 175px;
+}
+
+.animation input {
+	width: 200px;
+}
+
+.animation .span {
+	margin-left: 85px;
+}
+
+/* text-align */
+
+.text-align.container {
+	background-color: #87aaaa;
+	box-shadow: 0px 5px 0px #5d8c8c;
+}
+
+.text-align .dropdown-btn {
+	background-color: #5d8c8c;
+}
+
+
+.text-align .size {
+	width: 90px;
+}
+
+.text-align .span {
+	margin-left: 20px;
+}
+
+.text-align .dropdown-btn::after {
+	content: "";
+}
+
+.text-align .dropdown-btn.icon::after {
+	content: "\25BC";
+}
+
+
+/* padding */
+
+.padding.container {
+	background-color: #0097A7;
+	box-shadow: 0px 5px 0px #007D8A;
+}
+
+.padding input {
+	width: 80px;
+}
+
+/* border-radius */
+
+.border-radius.container {
+	background-color: #f66a94;
+	box-shadow: 0px 5px 0px #ad2d53;
+}
+
+.border-radius input {
+	width: 80px;
+}
+.border-radius .gap{
+	width: 110px;
+}
+/* border */
+
+.border.container {
+	background-color: #f66a94;
+	box-shadow: 0px 5px 0px #ad2d53;
+}
+
+.border input {
+	width: 150px;
+}
+
+/* clear    */
+
+.clear.container {
+	background-color: #03aa83;
+	box-shadow: 0px 5px 0px #0f8e70;
+}
+
+.clear .dropdown-btn {
+	background-color: #0f8e70;
+}
+
+
+.clear span {
+	margin-left: 5px;
+}
+
+.clear .dropdown-btn::after {
+	content: "";
+}
+
+.clear .dropdown-btn.icon::after {
+	content: "\25BC";
+}
+
+/* float */
+
+.float.container {
+	background-color: #ff37da;
+	box-shadow: 0px 5px 0px #a12c8c;
+}
+
+.float .dropdown-btn {
+	background-color: #a12c8c;
+}
+
+
+.float span {
+	margin-left: 5px;
+}
+
+.float .dropdown-btn::after {
+	content: "";
+}
+
+.float .dropdown-btn.icon::after {
+	content: "\25BC";
+}
+
+/* box-shadow*/
+#box-shadow .container {
+	background-color: #f66a94;
+	box-shadow: 0px 5px 0px #ad2d53;
+}
+
+#box-shadow input {
+	width: 200px;
+}
+
+/* font-size */
+#font-size .container {
+	background-color: #4acef4;
+	box-shadow: 0px 5px 0px #128bad;
+}
+
+#font-size .dropdown-btn {
+	background-color: #128bad;
+}
+
+#font-size .frstbtn {
+	background-color: transparent;
+	width: 80px;
+}
+
+#font-size .dropdown-content {
+	background-color: #4acef4;
+	box-shadow: 0px 5px 0px #128bad;
+}
+
+#font-size .dropdown-content::before {
+	border-bottom: 10px solid #4acef4;
+}
+
+#font-size .dropdown-content div:hover {
+	background-color: #128bad;
+	border-radius: 10px;
+}
+
+#font-size .dropdown-btn::after {
+	content: "";
+}
+
+#font-size .dropdown-btn.icon::after {
+	content: "\25BC";
+}
+
+#font-size span {
+	margin-left: 3px;
+}
+
+/* transform-orgin*/
+#transform-origin .container {
+	background-color: #9fb4ff;
+	box-shadow: 0px 5px 0px #707eaf;
+}
+
+#transform-origin input {
+	width: 100px;
+}
+
+
+
+
+
+
+#m9 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 80px;
+}
+
+#m9 .arrow {
+	position: absolute;
+	left: 230px;
+	top: 120px;
+}
+
+#m9 .blocks-menu {
+	position: absolute;
+	top: 60px;
+	left: 150px;
+}
+
+
+#m10 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m10 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 140px;
+}
+
+#m10 .arrow {
+	position: absolute;
+	left: 330px;
+	top: 170px;
+}
+
+#m10 .blocks-menu {
+	position: absolute;
+	top: 130px;
+	left: 170px;
+}
+
+#m11 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m11 .height {
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+#m11 .arrow {
+	position: absolute;
+	top: 220px;
+	left: 220px;
+}
+
+#m11 .blocks-menu {
+	width: 180px;
+	position: absolute;
+	top: 190px;
+	left: 150px;
+}
+#m11 .close.style-bl {
+	margin-top: 200px;
+}
+
+#m11 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 200px;
+}
+
+#m12 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m12 .height {
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+#m12 .arrow {
+	position: absolute;
+	top: 290px;
+	left: 220px;
+}
+
+#m12 .blocks-menu {
+	width: 180px;
+	position: absolute;
+	top: 250px;
+	left: 150px;
+}
+#m12 .close.style-bl {
+	margin-top: 200px;
+}
+
+#m12 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 250px;
+}
+#m12 .close.style-bl {
+	margin-top: 250px;
+}
+
+#m12 .clip-path {
+	position: absolute;
+	top: 190px;
+	left: 60px;
+}
+
+#m14 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m14 .height {
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+#m14 .arrow {
+	position: absolute;
+	top: 80px;
+	left: 240px;
+}
+
+#m14 .i3.arrow {
+	position: absolute;
+	top: 140px;
+	left: 240px;
+}
+#m14 .i4.arrow {
+	position: absolute;
+	top: 200px;
+	left: 240px;
+}
+#m14 .blocks-menu {
+	width: 180px;
+	position: absolute;
+	top: 250px;
+	left: 150px;
+}
+#m14 .close.style-bl {
+	margin-top: 200px;
+}
+
+#m14 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 250px;
+}
+#m14 .close.style-bl {
+	margin-top: 260px;
+}
+
+#m14 .clip-path {
+	position: absolute;
+	top: 190px;
+	left: 60px;
+}
+#m14 .clip-path .input1{
+	width: 150px;
+}
+#m14 .position {
+	position: absolute;
+	top: 250px;
+	left: 60px;
+}
+
+
+#m16 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m16 .height {
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+#m16 .arrow {
+	position: absolute;
+	top: 390px;
+	left: 100px;
+}
+
+
+#m16 .blocks-menu {
+	width: 180px;
+	position: absolute;
+	top: 250px;
+	left: 150px;
+}
+#m16 .close.style-bl {
+	margin-top: 200px;
+}
+
+#m16 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 250px;
+}
+#m16 .close.style-bl {
+	margin-top: 270px;
+}
+
+#m16 .clip-path {
+	position: absolute;
+	top: 190px;
+	left: 60px;
+}
+#m16 .clip-path .input1{
+	width: 210px;
+}
+#m16 .position {
+	position: absolute;
+	top: 250px;
+	left: 60px;
+}
+#m16 .style-block-short {
+	top: 20px;
+}
+
+
+#m17 .menu-icon {
+	position: absolute;
+	top: 80px;
+	left: 120px;
+}
+
+#m17 .blocks-menu {
+	position: absolute;
+	top: 80px;
+	left: 170px;
+}
+#m17 .arrow {
+	position: absolute;
+	top: 190px;
+	left: 250px;
+}
+#m17 .input{
+	width: 100px;
+}
+
+#m18 .menu-icon {
+	position: absolute;
+	top: 140px;
+	left: 120px;
+}
+
+#m18 .blocks-menu {
+	position: absolute;
+	top: 120px;
+	left: 170px;
+}
+#m18 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m18 .input{
+	width: 100px;
+}
+
+#m18 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m19 .menu-icon {
+	position: absolute;
+	top: 180px;
+	left: 120px;
+}
+
+#m19 .blocks-menu {
+	position: absolute;
+	top: 180px;
+	left: 170px;
+}
+#m19 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m19 .input{
+	width: 100px;
+}
+
+#m19 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m19 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m19 .close.style-bl {
+	margin-top: 180px;
+}
+
+#m21 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m21 .menu-icon {
+	position: absolute;
+	top: 180px;
+	left: 120px;
+}
+
+#m21 .blocks-menu {
+	position: absolute;
+	top: 180px;
+	left: 170px;
+}
+#m21 .arrow {
+	position: absolute;
+	top: 70px;
+	left: 230px;
+}
+#m21 .i5.arrow {
+	position: absolute;
+	top: 130px;
+	left: 230px;
+}
+#m21 .i6.arrow {
+	position: absolute;
+	top: 190px;
+	left: 330px;
+}
+#m21 .input{
+	width: 100px;
+}
+
+#m21 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m21 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m21 .close.style-bl {
+	margin-top: 190px;
+}
+
+#m22 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m22 .menu-icon {
+	position: absolute;
+	top: 180px;
+	left: 120px;
+}
+
+#m22 .blocks-menu {
+	position: absolute;
+	top: 180px;
+	left: 170px;
+}
+#m22 .arrow {
+	position: absolute;
+	top: 310px;
+	left: 100px;
+}
+
+#m22 .input{
+	width: 100px;
+}
+
+#m22 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m22 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m22 .close.style-bl {
+	margin-top: 190px;
+}
+	
+#m22 .style-block-short {
+	top: 20px;
+}
+
+#m23 .menu-icon {
+	position: absolute;
+	top: 80px;
+	left: 120px;
+}
+
+#m23 .blocks-menu {
+	position: absolute;
+	top: 80px;
+	left: 170px;
+}
+#m23 .arrow {
+	position: absolute;
+	top: 190px;
+	left: 250px;
+}
+#m23 .input{
+	width: 100px;
+}
+
+#m24 .menu-icon {
+	position: absolute;
+	top: 140px;
+	left: 120px;
+}
+
+#m24 .blocks-menu {
+	position: absolute;
+	top: 120px;
+	left: 170px;
+}
+#m24 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m24 .input{
+	width: 100px;
+}
+
+#m24 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m25 .menu-icon {
+	position: absolute;
+	top: 180px;
+	left: 120px;
+}
+
+#m25 .blocks-menu {
+	position: absolute;
+	top: 180px;
+	left: 170px;
+}
+#m25 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m25 .input{
+	width: 100px;
+}
+
+#m25 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m25 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m25 .close.style-bl {
+	margin-top: 180px;
+}
+
+#m26 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m26 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m26 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m26 .arrow {
+	position: absolute;
+	top: 350px;
+	left: 330px;
+}
+
+#m26 .input{
+	width: 100px;
+}
+
+#m26 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m26 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m26 .close.style-bl {
+	margin-top: 250px;
+}
+
+#m27 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m27 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m27 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m27 .arrow {
+	position: absolute;
+	top: 350px;
+	left: 330px;
+}
+
+#m27 .input{
+	width: 100px;
+}
+
+#m27 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m27 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m27 .close.style-bl {
+	margin-top: 250px;
+}
+
+#m29 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m29 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m29 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m29 .arrow {
+	position: absolute;
+	top: 250px;
+	left: 480px;
+}
+
+#m29 .input{
+	width: 100px;
+}
+
+#m29 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m29 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m29 .close.style-bl {
+	margin-top: 250px;
+}
+#m29 .transform{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+#m30 .box{
+	width: 300px;
+}
+
+
+#m31 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m31 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m31 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m31 .arrow {
+	position: absolute;
+	top: 70px;
+	left: 250px;
+}
+
+#m31 .i5.arrow {
+	position: absolute;
+	top: 130px;
+	left: 250px;
+}
+#m31 .i6.arrow {
+	position: absolute;
+	top: 190px;
+	left: 330px;
+}
+#m31 .i7.arrow {
+	position: absolute;
+	top: 250px;
+	left: 400px;
+}
+#m31 .input{
+	width: 100px;
+}
+
+#m31 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m31 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m31 .close.style-bl {
+	margin-top: 250px;
+}
+#m31 .transform{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+
+
+
+#m32 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m32 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m32 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m32 .arrow {
+	position: absolute;
+	top: 380px;
+	left: 100px;
+}
+
+
+#m32 .input{
+	width: 100px;
+}
+
+#m32 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m32 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m32 .close.style-bl {
+	margin-top: 250px;
+}
+#m32 .transform{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+
+#m32 .style-block-short {
+	top: 20px;
+}
+
+
+
+#m33 .menu-icon {
+	position: absolute;
+	top: 80px;
+	left: 120px;
+}
+
+#m33 .blocks-menu {
+	position: absolute;
+	top: 80px;
+	left: 170px;
+}
+#m33 .arrow {
+	position: absolute;
+	top: 190px;
+	left: 250px;
+}
+#m33 .input{
+	width: 100px;
+}
+
+#m34 .menu-icon {
+	position: absolute;
+	top: 140px;
+	left: 120px;
+}
+
+#m34 .blocks-menu {
+	position: absolute;
+	top: 120px;
+	left: 170px;
+}
+#m34 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m34 .input{
+	width: 100px;
+}
+
+#m34 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m35 .menu-icon {
+	position: absolute;
+	top: 180px;
+	left: 120px;
+}
+
+#m35 .blocks-menu {
+	position: absolute;
+	top: 180px;
+	left: 170px;
+}
+#m35 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m35 .input{
+	width: 100px;
+}
+
+#m35 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m35 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m35 .close.style-bl {
+	margin-top: 180px;
+}
+
+#m36 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m36 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m36 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m36 .arrow {
+	position: absolute;
+	top: 350px;
+	left: 330px;
+}
+
+#m36 .input{
+	width: 100px;
+}
+
+#m36 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m36 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m36 .close.style-bl {
+	margin-top: 250px;
+}
+
+#m37 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m37 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m37 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m37 .arrow {
+	position: absolute;
+	top: 350px;
+	left: 330px;
+}
+
+#m37 .input{
+	width: 100px;
+}
+
+#m37 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m37 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m37 .close.style-bl {
+	margin-top: 250px;
+}
+
+
+
+
+#m39 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m39 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m39 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m39 .arrow {
+	position: absolute;
+	top: 70px;
+	left: 250px;
+}
+
+#m39 .i5.arrow {
+	position: absolute;
+	top: 130px;
+	left: 250px;
+}
+#m39 .i6.arrow {
+	position: absolute;
+	top: 190px;
+	left: 330px;
+}
+#m39 .i7.arrow {
+	position: absolute;
+	top: 250px;
+	left: 400px;
+}
+#m39 .input{
+	width: 100px;
+}
+
+#m39 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m39 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m39 .close.style-bl {
+	margin-top: 250px;
+}
+#m39 .transform{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+
+
+
+#m41 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m41 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m41 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m41 .arrow {
+	position: absolute;
+	top: 380px;
+	left: 100px;
+}
+
+
+#m41 .input{
+	width: 100px;
+}
+
+#m41 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m41 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m41 .close.style-bl {
+	margin-top: 250px;
+}
+#m41 .transform{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+
+#m41 .style-block-short {
+	top: 20px;
+}
+
+#m42 .menu-icon {
+	position: absolute;
+	top: 80px;
+	left: 120px;
+}
+
+#m42 .blocks-menu {
+	position: absolute;
+	top: 80px;
+	left: 170px;
+}
+#m42 .arrow {
+	position: absolute;
+	top: 190px;
+	left: 250px;
+}
+#m42 .input{
+	width: 100px;
+}
+
+#m43 .menu-icon {
+	position: absolute;
+	top: 140px;
+	left: 120px;
+}
+
+#m43 .blocks-menu {
+	position: absolute;
+	top: 120px;
+	left: 170px;
+}
+#m43 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m43 .input{
+	width: 100px;
+}
+
+#m43 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m44 .menu-icon {
+	position: absolute;
+	top: 180px;
+	left: 120px;
+}
+
+#m44 .blocks-menu {
+	position: absolute;
+	top: 180px;
+	left: 170px;
+}
+#m44 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m44 .input{
+	width: 100px;
+}
+
+#m44 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m44 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m44 .close.style-bl {
+	margin-top: 180px;
+}
+
+#m45 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m45 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m45 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m45 .arrow {
+	position: absolute;
+	top: 350px;
+	left: 330px;
+}
+
+#m45 .input{
+	width: 100px;
+}
+
+#m45 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m45 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m45 .close.style-bl {
+	margin-top: 250px;
+}
+
+#m46 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m46 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m46 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m46 .arrow {
+	position: absolute;
+	top: 350px;
+	left: 330px;
+}
+
+#m46 .input{
+	width: 100px;
+}
+
+#m46 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m46 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m46 .close.style-bl {
+	margin-top: 250px;
+}
+
+
+
+
+#m48 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m48 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m48 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m48 .arrow {
+	position: absolute;
+	top: 70px;
+	left: 250px;
+}
+
+#m48 .i5.arrow {
+	position: absolute;
+	top: 130px;
+	left: 250px;
+}
+#m48 .i6.arrow {
+	position: absolute;
+	top: 190px;
+	left: 330px;
+}
+#m48 .i7.arrow {
+	position: absolute;
+	top: 250px;
+	left: 400px;
+}
+#m48 .input{
+	width: 100px;
+}
+
+#m48 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m48 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m48 .close.style-bl {
+	margin-top: 250px;
+}
+#m48 .transform{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+
+
+
+#m49 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m49 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m49 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m49 .arrow {
+	position: absolute;
+	top: 380px;
+	left: 100px;
+}
+
+
+#m49 .input{
+	width: 100px;
+}
+
+#m49 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m49 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m49 .close.style-bl {
+	margin-top: 250px;
+}
+#m49 .transform{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+
+#m49 .style-block-short {
+	top: 20px;
+}
+
+#m50 .menu-icon {
+	position: absolute;
+	top: 80px;
+	left: 120px;
+}
+
+#m50 .blocks-menu {
+	position: absolute;
+	top: 80px;
+	left: 170px;
+}
+#m50 .arrow {
+	position: absolute;
+	top: 190px;
+	left: 250px;
+}
+#m50 .input{
+	width: 100px;
+}
+
+#m51 .menu-icon {
+	position: absolute;
+	top: 140px;
+	left: 120px;
+}
+
+#m51 .blocks-menu {
+	position: absolute;
+	top: 120px;
+	left: 170px;
+}
+#m51 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m51 .input{
+	width: 100px;
+}
+
+#m51 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m52 .menu-icon {
+	position: absolute;
+	top: 180px;
+	left: 120px;
+}
+
+#m52 .blocks-menu {
+	position: absolute;
+	top: 180px;
+	left: 170px;
+}
+#m52 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m52 .input{
+	width: 100px;
+}
+
+#m52 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m52 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m52 .close.style-bl {
+	margin-top: 180px;
+}
+
+#m53 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m53 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m53 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m53 .arrow {
+	position: absolute;
+	top: 350px;
+	left: 330px;
+}
+
+#m53 .input{
+	width: 100px;
+}
+
+#m53 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m53 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m53 .close.style-bl {
+	margin-top: 250px;
+}
+
+#m54 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m54 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m54 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m54 .arrow {
+	position: absolute;
+	top: 350px;
+	left: 330px;
+}
+
+#m54 .input{
+	width: 100px;
+}
+
+#m54 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m54 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m54 .close.style-bl {
+	margin-top: 250px;
+}
+
+
+
+
+#m56 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m56 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m56 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m56 .arrow {
+	position: absolute;
+	top: 70px;
+	left: 250px;
+}
+
+#m56 .i5.arrow {
+	position: absolute;
+	top: 130px;
+	left: 250px;
+}
+#m56 .i6.arrow {
+	position: absolute;
+	top: 190px;
+	left: 330px;
+}
+#m56 .i7.arrow {
+	position: absolute;
+	top: 250px;
+	left: 400px;
+}
+#m56 .input{
+	width: 100px;
+}
+
+#m56 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m56 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m56 .close.style-bl {
+	margin-top: 250px;
+}
+#m56 .transform{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+
+
+
+#m57 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m57 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m57 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m57 .arrow {
+	position: absolute;
+	top: 380px;
+	left: 100px;
+}
+
+
+#m57 .input{
+	width: 100px;
+}
+
+#m57 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m57 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m57 .close.style-bl {
+	margin-top: 250px;
+}
+#m57 .transform{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+
+#m57 .style-block-short {
+	top: 20px;
+}
+
+
+#m58 .menu-icon {
+	position: absolute;
+	top: 80px;
+	left: 120px;
+}
+
+#m58 .blocks-menu {
+	position: absolute;
+	top: 80px;
+	left: 170px;
+}
+#m58 .arrow {
+	position: absolute;
+	top: 190px;
+	left: 250px;
+}
+#m58 .input{
+	width: 100px;
+}
+
+#m59 .menu-icon {
+	position: absolute;
+	top: 140px;
+	left: 120px;
+}
+
+#m59 .blocks-menu {
+	position: absolute;
+	top: 120px;
+	left: 170px;
+}
+#m59 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m59 .input{
+	width: 100px;
+}
+
+#m59 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m60 .menu-icon {
+	position: absolute;
+	top: 180px;
+	left: 120px;
+}
+
+#m60 .blocks-menu {
+	position: absolute;
+	top: 180px;
+	left: 170px;
+}
+#m60 .arrow {
+	position: absolute;
+	top: 230px;
+	left: 330px;
+}
+#m60 .input{
+	width: 100px;
+}
+
+#m60 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m60 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m60 .close.style-bl {
+	margin-top: 180px;
+}
+
+#m61 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m61 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m61 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m61 .arrow {
+	position: absolute;
+	top: 350px;
+	left: 330px;
+}
+
+#m61 .input{
+	width: 100px;
+}
+
+#m61 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m61 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m61 .close.style-bl {
+	margin-top: 250px;
+}
+
+#m62 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m62 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m62 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m62 .arrow {
+	position: absolute;
+	top: 350px;
+	left: 330px;
+}
+
+#m62 .input{
+	width: 100px;
+}
+
+#m62 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m62 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m62 .close.style-bl {
+	margin-top: 250px;
+}
+
+
+
+
+#m65 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m65 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m65 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m65 .arrow {
+	position: absolute;
+	top: 70px;
+	left: 250px;
+}
+
+#m65 .i5.arrow {
+	position: absolute;
+	top: 130px;
+	left: 250px;
+}
+#m65 .i6.arrow {
+	position: absolute;
+	top: 190px;
+	left: 330px;
+}
+#m65 .i7.arrow {
+	position: absolute;
+	top: 250px;
+	left: 400px;
+}
+#m65 .input{
+	width: 100px;
+}
+
+#m65 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m65 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m65 .close.style-bl {
+	margin-top: 250px;
+}
+#m65 .transform{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+
+
+
+#m66 .bg-color{
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#m66 .menu-icon {
+	position: absolute;
+	top: 250px;
+	left: 120px;
+}
+
+#m66 .blocks-menu {
+	position: absolute;
+	top: 240px;
+	left: 170px;
+}
+#m66 .arrow {
+	position: absolute;
+	top: 380px;
+	left: 100px;
+}
+
+
+#m66 .input{
+	width: 100px;
+}
+
+#m66 .positions-properties{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+}
+
+#m66 .i3.positions-properties{
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+#m66 .close.style-bl {
+	margin-top: 250px;
+}
+#m66 .transform{
+	position: absolute;
+	top: 240px;
+	left: 60px;
+}
+
+#m66 .style-block-short {
+	top: 20px;
+}
+
+#m67 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 80px;
+}
+
+#m67 .arrow {
+	position: absolute;
+	left: 230px;
+	top: 120px;
+}
+
+#m67 .blocks-menu {
+	position: absolute;
+	top: 60px;
+	left: 150px;
+}
+
+
+#m68 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m68 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 140px;
+}
+
+#m68 .arrow {
+	position: absolute;
+	left: 330px;
+	top: 170px;
+}
+
+#m68 .blocks-menu {
+	position: absolute;
+	top: 130px;
+	left: 170px;
+}
+
+#m69 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m69 .height {
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+#m69 .arrow {
+	position: absolute;
+	top: 250px;
+	left: 320px;
+}
+
+#m69 .blocks-menu {
+	width: 190px;
+	position: absolute;
+	top: 190px;
+	left: 150px;
+}
+#m69 .close.style-bl {
+	margin-top: 200px;
+}
+
+#m69 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 200px;
+}
+
+
+#m70 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m70 .height {
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+#m70 .arrow {
+	position: absolute;
+	top: 240px;
+	left: 220px;
+}
+
+#m70 .blocks-menu {
+	width: 180px;
+	position: absolute;
+	top: 190px;
+	left: 150px;
+}
+#m70 .close.style-bl {
+	margin-top: 200px;
+}
+
+#m70 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 200px;
+}
+
+#m72 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m72 .height {
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+#m72 .arrow {
+	position: absolute;
+	top: 80px;
+	left: 240px;
+}
+
+#m72 .i3.arrow {
+	position: absolute;
+	top: 140px;
+	left: 240px;
+}
+
+#m72 .i4.arrow {
+	position: absolute;
+	top: 200px;
+	left: 320px;
+}
+
+#m72 .i5.arrow {
+	position: absolute;
+	top: 260px;
+	left: 240px;
+}
+
+#m72 .close.style-bl {
+	margin-top: 200px;
+}
+
+#m72 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 305px;
+}
+#m72 .close.style-bl {
+	margin-top: 300px;
+}
+
+#m72 .bg-color{
+	position: absolute;
+	top: 190px;
+	left: 60px;
+}
+#m72 .clip-path {
+	position: absolute;
+	top: 250px;
+	left: 60px;
+}
+
+#m73 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m73 .height {
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+#m73 .arrow {
+	position: absolute;
+	top: 410px;
+	left: 220px;
+}
+
+#m73 .close.style-bl {
+	margin-top: 200px;
+}
+
+#m73 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 305px;
+}
+#m73 .close.style-bl {
+	margin-top: 300px;
+}
+
+#m73 .bg-color{
+	position: absolute;
+	top: 190px;
+	left: 60px;
+}
+#m73 .clip-path {
+	position: absolute;
+	top: 250px;
+	left: 60px;
+}
+#m73 .clip-path .input1{
+	width: 100px;
+}
+#m73 .blocks-menu {
+	position: absolute;
+	top: 310px;
+	left: 160px;
+}
+
+#m74 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m74 .height {
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+#m74 .arrow {
+	position: absolute;
+	top: 410px;
+	left: 320px;
+}
+
+#m74 .close.style-bl {
+	margin-top: 200px;
+}
+
+#m74 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 365px;
+}
+#m74 .close.style-bl {
+	margin-top: 360px;
+}
+
+#m74 .bg-color{
+	position: absolute;
+	top: 190px;
+	left: 60px;
+}
+#m74 .clip-path {
+	position: absolute;
+	top: 250px;
+	left: 60px;
+}
+#m74 .clip-path .input1{
+	width: 100px;
+}
+#m74 .blocks-menu {
+	position: absolute;
+	top: 370px;
+	left: 160px;
+}
+
+#m74 .positions-properties{
+	position: absolute;
+	top: 310px;
+	left: 60px;
+}
+#m75 .box{
+	width: 300px;
+}
+#m76 .width {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#m76 .height {
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+#m76 .arrow {
+	position: absolute;
+	top: 320px;
+	left: 240px;
+}
+#m76 .i3.arrow {
+	position: absolute;
+	top: 380px;
+	left: 240px;
+}
+#m76 .close.style-bl {
+	margin-top: 200px;
+}
+
+#m76 .menu-icon {
+	position: absolute;
+	left: 100px;
+	top: 365px;
+}
+#m76 .close.style-bl {
+	margin-top: 390px;
+}
+
+#m76 .bg-color{
+	position: absolute;
+	top: 190px;
+	left: 60px;
+}
+#m76 .clip-path {
+	position: absolute;
+	top: 250px;
+	left: 60px;
+}
+#m76 .clip-path .input1{
+	width: 100px;
+}
+#m76 .blocks-menu {
+	position: absolute;
+	top: 370px;
+	left: 160px;
+}
+
+#m76 .positions-properties{
+	position: absolute;
+	top: 310px;
+	left: 60px;
+}
+
+#m76 .i2.positions-properties{
+	position: absolute;
+	top: 370px;
+	left: 60px;
+}
+
+#m79 .arrow {
+	position: absolute;
+	left: 70px;
+}
+
+#m79.menu-icon {
+	position: absolute;
+	top: 60px;
+	left: 0px;
+}
+
+#m79.blocks-menu {
+	position: absolute;
+	left: 30px;
+}
+
+
+#m80 .b2.i1 span,
+#m81 .b2.i1 span {
+	margin-left: 40px;
+	font-size: 1.8rem;
+}
+
+
+#m80 .menu-Icon,
+#m81 .menu-Icon {
+	position: relative;
+	top: 40px;
+	left: 100px;
+}
+
+#m80 .arrow {
+	position: absolute;
+	left: 130px;
+}
+
+#m81 .blocks-menu {
+	position: relative;
+	bottom: 10px;
+	left: 170px;
+	z-index: 10;
+	width: 200px;
+
+}
+
+#m81 .b3.i1 span {
+	margin-left: 0;
+	font-size: 1.2rem;
+}
+
+#m81 .b3.i1 span {
+	margin-left: 0 !important;
+}
+
+#m81 .arrow {
+	position: absolute;
+	top: 160px;
+	left: 370px;
+	z-index: 11;
+}
+
+.content-center {
+	margin-right: 8%;
+}
+
+
+.asses-center {
+	margin-left: 20%;
+}
+
+/* ====================================== Slide Page end ========================================== */
+
+/*** END ***/
+
+/*** 
+====================================================================
+    Page Styling - END
+====================================================================
+***/
+
+
+/*** 
+====================================================================
+   Responsive - START
+====================================================================
+***/
+
+/* large laptop screen*/
+@media (min-width: 1440px) {
+	.pageGrid {
+		padding-left: 12%;
+		padding-right: 7%;
+	}
+
+	/* --------- Slide header section Start --------- */
+
+	.slide .slide-header h3 {
+		font-size: 2rem;
+	}
+
+	.slide-header .level-indicator {
+		width: 230px;
+	}
+
+	.page-indicator h3 {
+		font-size: 2rem;
+	}
+
+	.submit-btn {
+		width: 150px;
+		font-size: 2.5rem;
+		font-weight: 600;
+	}
+
+}
+
+/* Mac Book Screen */
+@media (max-width: 1280px) {
+	header {
+		top: 65px;
+	}
+}
+
+/* tablet screen*/
+@media (max-width: 1024px) and (orientation: landscape) {
+
+	.pageGrid {
+		--xl: 9%;
+		--lg: 3%;
+	}
+
+	header {
+		top: 120px;
+	}
+
+	.slide-header .prev-arrow {
+		font-size: 2rem;
+		width: 40px;
+		height: 40px;
+	}
+
+	.slide .slide-header h3 {
+		font-size: 1.3rem;
+	}
+
+	.slide-header .level-indicator {
+		width: 150px;
+	}
+
+	.slide-header .page-indicator {
+		width: 75px;
+		padding: 10px;
+	}
+
+	.page-indicator h3 {
+		font-size: 1.5rem;
+	}
+
+	.prev-btn,
+	.next-btn {
+		font-size: 3.3rem;
+	}
+
+	main .simpleGrid p {
+		font-size: 2.3rem;
+	}
+
+
+	main .simpleGrid {
+		height: 70vh;
+		zoom: 0.8;
+	}
+
+}
+
+
+/* Landscape orientation for mobile */
+@media (max-width: 950px) and (orientation: landscape) {
+
+	.pageGrid {
+		--xl: 24%;
+		--lg: 21%;
+	}
+
+	header {
+		top: 20px;
+	}
+
+	.slide-header .prev-arrow {
+		padding: 3px;
+		font-size: 1.5rem;
+		width: 27px;
+		height: 27px;
+		border: 1px solid var(--color2);
+	}
+
+	.slide .slide-header h3 {
+		font-size: 1.1rem;
+	}
+
+	.slide-header .level-indicator {
+		padding: 3px 8px 3px 15px;
+		left: 13px;
+		width: fit-content;
+		border: 1px solid var(--color2);
+	}
+
+	.slide-header .page-indicator {
+		width: 50px;
+		padding: 3px;
+		border: 1px solid var(--color2);
+	}
+
+	.page-indicator h3 {
+		font-size: 1rem;
+	}
+
+	.prev-btn,
+	.next-btn {
+		font-size: 2.5rem;
+	}
+
+	.prev-btn-static,
+	.next-btn-static {
+		top: 28%;
+	}
+
+	main .simpleGrid p {
+		font-size: 3rem;
+	}
+
+	main .simpleGrid {
+		zoom: 0.35;
+	}
+
+	#m27 .n0-i2 {
+		--px-xl: 17%;
+	}
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 600px) and (orientation: landscape) {
+	.pageGrid {
+		--xl: 14%;
+		--lg: 10%;
+	}
+
+	.result-image {
+		width: 80px;
+	}
+}
+
+/* mobile screen*/
+@media (max-width: 840px) and (orientation: portrait) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.pageGrid {
+		display: none;
+	}
+
+	.mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.mobile p {
+		display: flex;
+		font-size: 2rem;
+	}
+
+	.mobile img {
+		width: 10%;
+		display: flex;
+	}
+
+}
+
+/*** 
+  ====================================================================
+	 Responsive - END
+  ====================================================================
+  ***/
